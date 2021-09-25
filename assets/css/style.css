@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #fc9038;
+    --secondary-color: #76020c;
+    --tertiary-color: #39a6b2;
+  }
+
+header {
+    padding: 1%;
+    display: flex;
+    background-image: url('../images/space-image.jpg') ;
+    background-size: cover;
+    opacity: 0.75;
+} 
+
+
+.banner h1 {
+    color: var(--secondary-color);
+    font-weight: bold;
+
+    
+
+}
+
+.banner h2 {
+    justify-content: space-around;
+    align-content: right;
+}
+
+.title-plain {
+    display: flex;
+    
+}
+
+.about-me {
+    font-size: 40px;
+    border-right: var(--secondary-color);
+    padding: 20px;
+}
