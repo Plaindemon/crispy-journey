@@ -4,7 +4,7 @@
     --tertiary-color: #39a6b2;
   }
 body {
-    margin:auto;
+    margin: 5px;
     padding: 10px;
     background-color: #fdc598; 
     
@@ -84,14 +84,15 @@ footer {
 
 }
 /* end of sub-banner style */ 
+
 /* Start of about-me style */
 
-.about-me {
-    
+#about-me {
+    border: 10px solid var(--secondary-color);
 }
 
-.about-me h2 {
-    border: 10px solid var(--secondary-color);
+#about-me h2 {
+    border: 10px solid var(--tertiary-color);
     font-size: 40px;
     padding: 20px;
     display: flex;
@@ -99,15 +100,15 @@ footer {
 }
 
 
-.about-me p {
+#about-me p {
     font-size: 16px;
     padding: 20px;
     display: flex;
     justify-content:space-around;
 }
 /*  image ben.jpg */
-.about-me figure img {
-    max-width: 15%;
+#about-me img {
+    max-width: 10%;
     height: auto;
 }
 
