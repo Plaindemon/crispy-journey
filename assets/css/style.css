@@ -107,20 +107,35 @@ footer {
 
 /* start of work style */
 
-.work {
+#work {
     background-color: var(--primary-color); 
     padding-inline-start: 25px var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#work h2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+#work ul  {
+    font-size: 25px;
+    
 }
 
-.work h2  {
-    flex-direction: row;
+#work ul li {
+    display: flex;
+    
+    
 }
 
-.work h3 {
-
+.bigger-photo {
+    border-image: url('../images/blue-dot.jpg');
+   
+    
+    
 }
  /* start of info-me style in footer tag */
  .info-me {
