@@ -4,6 +4,12 @@
     --tertiary-color: #39a6b2;
   }
 
+  /* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } */
+  
 header {
     padding: 1%;
     display: flex;
@@ -16,7 +22,7 @@ header {
 .banner h1 {
     color: var(--secondary-color);
     font-weight: bold;
-
+    font-family: Helvetica, Arial, sans-serif;
     
 
 }
@@ -24,6 +30,7 @@ header {
 .banner h2 {
     justify-content: space-around;
     align-content: right;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .title-plain {
@@ -33,6 +40,11 @@ header {
 
 .about-me {
     font-size: 40px;
-    border-right: var(--secondary-color);
     padding: 20px;
+}
+
+/*  image ben.jpg */
+figure img {
+    max-width: 15%;
+    height: auto;
 }
