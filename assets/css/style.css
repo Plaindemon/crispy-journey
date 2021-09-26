@@ -3,16 +3,21 @@
     --secondary-color: #76020c;
     --tertiary-color: #39a6b2;
   }
-
+body {
+    margin:auto;
+    padding: 10px;
+}
   /* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   } */
   
-header {
+/*  */
+
+ /* Start of the banner style */
+.banner {
     padding: 1%;
-    display: flex;
     background-image: url('../images/space-image.jpg') ;
     background-size: cover;
     opacity: 0.75;
@@ -23,28 +28,84 @@ header {
     color: var(--secondary-color);
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
     
 
 }
 
 .banner h2 {
-    justify-content: space-around;
-    align-content: right;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.title-plain {
     display: flex;
+    flex-direction: row-reverse;
+    vertical-align: top;
+    justify-content: stretch;
+    font-family: Helvetica, Arial, sans-serif;
+    
+    
+   
+}
+/*  */
+
+/* End of banner style */
+
+/* start of sub-banner style */
+.sub-banner{
+    
+    
+}
+.sub-banner img{
+    padding: 2px;
+    background-size: cover;
+}
+/* end of sub-banner style */ 
+/* Start of about-me style */
+
+.about-me {
     
 }
 
-.about-me {
+.about-me h2 {
     font-size: 40px;
     padding: 20px;
+    display: flex;
+    justify-content: start;
 }
 
+
+.about-me p {
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+}
 /*  image ben.jpg */
-figure img {
+.about-me figure img {
     max-width: 15%;
     height: auto;
 }
+
+/* end of about-me style */
+
+/* start of work style */
+
+.work {
+    background-color: var(--primary-color); 
+    padding-inline-start: 25px var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work h2  {
+    flex-direction: row;
+}
+
+.work h3 {
+
+}
+ /* start of info-me style in footer tag */
+ .info-me {
+     display: flex;
+     justify-content:space-evenly;
+ }
