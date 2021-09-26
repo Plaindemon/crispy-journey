@@ -15,17 +15,20 @@ body {
   
 /*  */
 
- /* Start of the banner style */
-.banner {
+ /* Start of the header style */
+header {
     padding: 1%;
-    background-image: url('../images/space-image.jpg') ;
+    background-color: var(--primary-color);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
     opacity: 0.75;
+
 } 
 
 
-.banner h1 {
-    color: var(--secondary-color);
+header h1 {
+    background-color: var(--secondary-color);
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
     display: flex;
@@ -34,29 +37,44 @@ body {
     
 
 }
-
-.banner h2 {
+/* added flexbox to the list */
+header ul li {
+    background-color: var(--tertiary-color);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     vertical-align: top;
     justify-content: stretch;
-    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 5%;
+    
     
     
    
 }
-/*  */
+/* footer start */
+footer {
+    background-color: var(--secondary-color);
+    border: 25px;
+    padding: 20px;
+}
 
 /* End of banner style */
 
 /* start of sub-banner style */
 .sub-banner{
-    
+    font-size: 24px;
     
 }
 .sub-banner img{
+    border-top-color: var(--secondary-color);
+    background-image: url('../images/orange.jpg');
+    background-attachment: fixed;
     padding: 2px;
     background-size: cover;
+
 }
 /* end of sub-banner style */ 
 /* Start of about-me style */

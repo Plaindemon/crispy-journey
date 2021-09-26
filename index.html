@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<!-- Add charset to html tag -->
-<html >
+<!-- html language eng -->
+<html lang="en">
 <head>
-
-    <title>Portfolio</title><!-- Tab title and page title -->
-    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Tab title and page title -->
     <link href='assets/css/style.css' rel='stylesheet'>
 </head>
 
 <body>
-<!-- create header with flexbox to float it to the right for h1 and left for h2 
--->
-<header class="banner">
+<!-- Navigation -->
+<!-- header navigation bar -->
+<header>
+  <nav>
     <h1> Plaindemon - Benjamin Chaplin </h1>
     <br><br>
-    
-    <h2>About Me</h2>
+  <ul>
+    <li>
+      <a href="#about-me">About Me</a>
+    </li>
+    <li><a href="#work">work</a></li>
 
-    <h2>Work</h2>
+    <li><a href="#contact-me">Contact Me</a></li>
 
-    <h2>Contact Me</h2>
-
-    <h2>Resume</h2>
-
+    <li><a href="#resume">Resume</a></li>
+  </ul>
+  </nav>
 </header>
 
 <figure class="sub-banner">
-    <img src="assets/images/orange.jpg"
-    <figcaption>
-        portfolio text test image below header
-    </figcaption>
+   
 </figure>
--->
 
-<main class="about-me">
 
+
+<section id="about-me">
   <h2>About Me</h2>
     <figure>
       <img src="assets/images/ben.jpg" alt="Benjamin Chaplin in hat" title="benjamin">
@@ -49,11 +50,11 @@
 
   <h3>TEXT HEADER HERE</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laborum dolorem quas nihil eum beatae cum minima eius molestiae ducimus! Perspiciatis maiores ea nesciunt, alias officiis consequuntur! Fugiat, amet ipsam?</p>
-  
-</main>
+</section>
 
 
-<div class="work">
+
+<section id="work">
   <!-- work -- add 5 projects placeholders  and the 1st challenge -->
 
     <h2>WORK</h2>
@@ -74,21 +75,69 @@
     <img src="assets/images/simple-home.png" alt="" title=""> -->
 
 
-  </div>
+    </section>
+<!-- resume start - random resume - most recent company first-->
+  <section id="resume">
+      <h2>Resume</h2>
+      <ul>
+        <li>
+          <p><strong>Company 1:</strong>Years worked (2000-2020)</p>
+          <br>
+          <p>Responsibilities: 
+            <ol>
+              <li>Add work responsibilities here</li>
+              <li>Add work example here</li>
+            </ol>
+          </p>
+        </li>
+<!-- -->
+        <li>
+          <p><strong>Company 2:</strong>Years worked (2010-2015)</p>
+          <br>
+          <p>Responsibilities: 
+            <ol>
+              <li>Add work responsibilities here</li>
+              <li>Add work example here</li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p><strong>Company 3:</strong>Years worked (20009-2010)</p>
+          <br>
+          <p>Responsibilities: 
+            <ol>
+              <li>Add work responsibilities here</li>
+              <li>Add work example here</li>
+            </ol>
+          </p>
+        </li>
+       
+      </ul>
+    <!--  -->
+    
+  </section>
+    
 
+<!-- contact me section start -->
+  <section id="contact-me">
+      <h2>Contact Me</h2>
+    <!-- Added placeholder number, email, git hub link, etc -->
+        <h4>PHONE: 999-999-9999</h4>
+        <h4>TEXT HERE</h4>
+        <h4>useremail@email.com</h4>
+        <h4>GITHUB</h4>
+        <h4>INFO</h4>
+  </section> 
 
 
 </body>
 
-<footer class="info-me">
-  <h2>Contact Me</h2>
-<!-- Added placeholder number, email, git hub link, etc -->
-    <h4>PHONE: 999-999-9999</h4>
-    <h4>TEXT HERE</h4>
-    <h4>useremail@email.com</h4>
-    <h4>GITHUB</h4>
-    <h4>INFO</h4>
-    
+
+<footer>
+<p>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo numquam magnam inventore incidunt beatae deleniti, quas placeat soluta distinctio ut laborum impedit nostrum dolorem tempore repudiandae, repellat blanditiis ea vero.
+</p>
+
 </footer>
 
 </html>
