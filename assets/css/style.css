@@ -6,19 +6,26 @@
 body {
     margin:auto;
     padding: 10px;
+    background-color: #fdc598; 
+    
 }
-  /* * {
+* {
     box-sizing: border-box;
-    margin: 0;
+    margin: 5px;
     padding: 0;
-  } */
+    border-color: #39a6b2;
+  } 
   
 /*  */
 
  /* Start of the header style */
 header {
-    padding: 1%;
+    padding: 20px;
     background-color: var(--primary-color);
+    background-image: url("../images/orange.jpg");
+    display: flex;
+    position: sticky;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-size: auto;
@@ -34,6 +41,7 @@ header h1 {
     display: flex;
     justify-content: start;
     flex-direction: row;
+    text-shadow: 0 0 10px var('--secondary-color');
     
 
 }
@@ -69,7 +77,6 @@ footer {
     
 }
 .sub-banner img{
-    border-top-color: var(--secondary-color);
     background-image: url('../images/orange.jpg');
     background-attachment: fixed;
     padding: 2px;
@@ -84,6 +91,7 @@ footer {
 }
 
 .about-me h2 {
+    border: 10px solid var(--secondary-color);
     font-size: 40px;
     padding: 20px;
     display: flex;
@@ -108,37 +116,66 @@ footer {
 /* start of work style */
 
 #work {
-    background-color: var(--primary-color); 
-    padding-inline-start: 25px var(--secondary-color);
+    border: 10px solid var(--secondary-color);
+    border-radius: 15px;
+    padding: 25px var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+    
 
 }
 #work h2 {
+    font-size: 30px;
+    border: 10px solid var(--tertiary-color);
+    background-image: url('../images/maroon.jpg');
+    background-repeat: repeat-x;
     display: flex;
     flex-wrap: wrap;
 }
 #work ul  {
+    color: var(--secondary-color);
+    background-color: #fc9038;
     font-size: 25px;
+    font-weight: bold;
+    opacity: 0.75;
+
+    
     
 }
-
-#work ul li {
+#work ul li:hover {
     display: flex;
+    opacity: 1;
+}
+
+#work ul li img {
+    border: 10px solid var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    
+    
     
     
 }
 
 .bigger-photo {
-    border-image: url('../images/blue-dot.jpg');
+    border: 10px solid var(--secondary-color);
+    border-radius: 5px;
+    background-size: 15px;
+    background-repeat: repeat;
+    padding: 50px;
    
     
     
 }
+.bigger-photo img{
+    border: 10px solid var(--secondary-color);
+    
+}
  /* start of info-me style in footer tag */
- .info-me {
+ .contact-me {
+    border: 10px solid var(--secondary-color);
      display: flex;
      justify-content:space-evenly;
  }
