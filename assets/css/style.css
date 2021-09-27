@@ -20,6 +20,7 @@ body {
 
  /* Start of the header style */
 header {
+    border: 10px solid var(--tertiary-color);
     padding: 20px;
     background-color: var(--primary-color);
     background-image: url("../images/orange.jpg");
@@ -72,15 +73,17 @@ footer {
 /* End of banner style */
 
 /* start of sub-banner style */
-.sub-banner{
+#sub-banner {
     font-size: 24px;
-    
-}
-.sub-banner img{
-    background-image: url('../images/orange.jpg');
+    background-image: url('../images/light-teal.jpg');
     background-attachment: fixed;
-    padding: 2px;
+    padding: 15px;
     background-size: cover;
+}
+#sub-banner h2 {
+    font-weight: bold;
+    color: #3d0207
+
 
 }
 /* end of sub-banner style */ 
@@ -96,20 +99,26 @@ footer {
     font-size: 40px;
     padding: 20px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-end;
+    
 }
 
 
 #about-me p {
-    font-size: 16px;
-    padding: 20px;
+    border: 10px solid var(--primary-color);
+    font-size: 18px;
+    padding: 15px;
     display: flex;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content:space-center;
+    
 }
 /*  image ben.jpg */
 #about-me img {
+    border: 10px solid var(--secondary-color);
     max-width: 10%;
     height: auto;
+
 }
 
 /* end of about-me style */
