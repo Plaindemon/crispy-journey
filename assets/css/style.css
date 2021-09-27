@@ -21,7 +21,7 @@ body {
 
  /* Start of the header style */
 header {
-    border: 10px solid var(--tertiary-color);
+    border: 5px solid var(--tertiary-color);
     padding: 20px;
     background-color: var(--primary-color);
     background-image: url("../images/orange.jpg");
@@ -64,14 +64,43 @@ header ul li {
     
    
 }
+/* End of banner style */
+
 /* footer start */
 footer {
-    background-color: var(--secondary-color);
-    border: 25px;
+    background-color: 
+    #95b0b3;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
     padding: 20px;
-}
 
-/* End of banner style */
+}
+ /* start of contact-me style in footer tag */
+ #contact-me {
+   
+     display: flex;
+     justify-content:space-evenly;
+ }
+
+#contact-me h2 {
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 12px;
+    background-image: url('../images/orange.jpg');
+    background-repeat: repeat-x;
+    display: flex;
+}
+#contact-me h4 {
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url('../images/light-teal.jpg');
+    background-repeat: repeat-x;
+    display: flex;
+}
+/* end of contact-me style */
+/* end of footer style */
+
 
 /* start of sub-banner style */
 #sub-banner {
@@ -92,11 +121,11 @@ footer {
 /* Start of about-me style */
 
 #about-me {
-    border: 10px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
 }
 
 #about-me h2 {
-    border: 10px solid var(--tertiary-color);
+    border: 5px solid var(--tertiary-color);
     font-size: 40px;
     padding: 20px;
     display: flex;
@@ -106,7 +135,7 @@ footer {
 
 
 #about-me p {
-    border: 10px solid var(--primary-color);
+    border: 5px solid var(--primary-color);
     font-size: 18px;
     padding: 15px;
     display: flex;
@@ -116,7 +145,7 @@ footer {
 }
 /*  image ben.jpg */
 #about-me img {
-    border: 10px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
     max-width: 10%;
     height: auto;
 
@@ -127,7 +156,7 @@ footer {
 /* start of work style */
 
 #work {
-    border: 10px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
     border-radius: 15px;
     padding: 25px var(--secondary-color);
     display: flex;
@@ -139,7 +168,7 @@ footer {
 
 }
 #bigger-photo {
-    border: 10px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
     border-radius: 5px;
     background-size: 15px;
     background-repeat: repeat;
@@ -149,7 +178,7 @@ footer {
     
 }
 #bigger-photo img{
-    border: 10px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
     max-width: 1500px;
     height:auto;
     
@@ -157,8 +186,9 @@ footer {
 
 #work h2 {
     font-size: 30px;
-    border: 10px solid var(--tertiary-color);
-    background-image: url('../images/maroon.jpg');
+    border: 5px solid var(--tertiary-color);
+    border-radius: 15px;
+    background-image: url('../images/orange.jpg');
     background-repeat: repeat-x;
     display: flex;
     flex-wrap: wrap;
@@ -182,28 +212,16 @@ footer {
 }
 
 #work ul li img {
-    border: 10px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
-    height:auto;
-    
-    
-    
-    
-    
-    
-    
+    height:auto; 
 }
 
 
- /* start of contact-me style in footer tag */
- .contact-me {
-    border: 10px solid var(--secondary-color);
-     display: flex;
-     justify-content:space-evenly;
- }
-/* end of contact-me style */
+
 
 /* Start of Resume style */
 #resume {
@@ -218,9 +236,14 @@ footer {
 }
 
 #resume h2 {
+    border: 5px solid var(--tertiary-color);
+    border-radius: 15px;
     font-size: 30px;
     color: #3d0207;
     align-items: flex-start;
+    background-image: url('../images/orange.jpg');
+    background-repeat: repeat-x;
+    
 }
 
 #resume ul  {
