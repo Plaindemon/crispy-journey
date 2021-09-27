@@ -167,7 +167,7 @@ footer {
     
 
 }
-#bigger-photo {
+/* #bigger-photo {
     border: 5px solid var(--secondary-color);
     border-radius: 5px;
     background-size: 15px;
@@ -182,7 +182,7 @@ footer {
     max-width: 1500px;
     height:auto;
     
-}
+} */
 
 #work h2 {
     font-size: 30px;
@@ -199,11 +199,7 @@ footer {
     font-size: 25px;
     font-weight: bold;
     opacity: 0.75;
-    color:#3d0207;
-    
-
-    
-    
+    color:#3d0207; 
 }
 #work ul li:hover {
     display: flex;
@@ -214,11 +210,33 @@ footer {
 #work ul li img {
     border: 5px solid var(--secondary-color);
     border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 400px;
     height:auto; 
+    
 }
+#work ul li img {
+    background-image: url('../images/portfolio-project.png');
+    background-size: 1000px;
+}
+/* #work ul li img.big-photo {
+    border: 5px solid blue;
+    border-radius: 15px;
+    max-width: 750px;
+    height:auto; 
+} */
+ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+ul li {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
 
 
 
