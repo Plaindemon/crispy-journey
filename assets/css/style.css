@@ -188,7 +188,7 @@ header ul li {
 #work ul li {
     border: 5px solid var('--secondary-color');
     border-radius: 15px;
-    text-align: left; 
+     
 } 
 
 ul {
@@ -198,7 +198,7 @@ ul {
     flex-wrap: wrap;
     
 }
-ul li {
+/* ul li {
     /* display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
@@ -241,7 +241,7 @@ ul li {
 #resume ul li p {
     font-size: 18px;
     color: #3d0207;
-    tex-align: right;
+   
 }
 /* footer start */
 footer {
