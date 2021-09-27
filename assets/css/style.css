@@ -2,6 +2,7 @@
     --primary-color: #fc9038;
     --secondary-color: #76020c;
     --tertiary-color: #39a6b2;
+
   }
 body {
     margin: 5px;
@@ -183,10 +184,40 @@ footer {
     border: 10px solid var(--secondary-color);
     
 }
- /* start of info-me style in footer tag */
+
+ /* start of contact-me style in footer tag */
  .contact-me {
     border: 10px solid var(--secondary-color);
      display: flex;
      justify-content:space-evenly;
  }
+/* end of contact-me style */
 
+/* Start of Resume style */
+#resume {
+    border: 5px solid var(--secondary-color);
+    border-radius: 15px;
+    padding-top: 5px solid var(--tertiary-color);
+    align-items:flex-end;
+    justify-content: flex-end;
+    box-shadow: 1px 1px 10px #3d0207;
+
+
+}
+
+#resume h2 {
+    font-size: 30px;
+    color: #3d0207;
+    align-items: flex-start;
+}
+
+#resume ul  {
+    font-size: 18px;
+    color: #3d0207;
+    align-items: flex-end;
+}
+
+#resume ul li p {
+    font-size: 18px;
+    color: #3d0207;
+}
