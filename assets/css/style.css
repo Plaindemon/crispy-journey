@@ -134,9 +134,27 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+    text-decoration: none;
     
 
 }
+#bigger-photo {
+    border: 10px solid var(--secondary-color);
+    border-radius: 5px;
+    background-size: 15px;
+    background-repeat: repeat;
+    padding: 50px;
+   
+    
+    
+}
+#bigger-photo img{
+    border: 10px solid var(--secondary-color);
+    max-width: 1500px;
+    height:auto;
+    
+}
+
 #work h2 {
     font-size: 30px;
     border: 10px solid var(--tertiary-color);
@@ -151,6 +169,8 @@ footer {
     font-size: 25px;
     font-weight: bold;
     opacity: 0.75;
+    color:#3d0207;
+    
 
     
     
@@ -158,32 +178,24 @@ footer {
 #work ul li:hover {
     display: flex;
     opacity: 1;
+    
 }
 
 #work ul li img {
     border: 10px solid var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
+    max-width: 500px;
+    height:auto;
+    
+    
+    
     
     
     
     
 }
 
-.bigger-photo {
-    border: 10px solid var(--secondary-color);
-    border-radius: 5px;
-    background-size: 15px;
-    background-repeat: repeat;
-    padding: 50px;
-   
-    
-    
-}
-.bigger-photo img{
-    border: 10px solid var(--secondary-color);
-    
-}
 
  /* start of contact-me style in footer tag */
  .contact-me {
@@ -220,4 +232,61 @@ footer {
 #resume ul li p {
     font-size: 18px;
     color: #3d0207;
+    tex-align: right;
+}
+
+/* Media query tags for a responsive layout when resizing the page */
+/* small desktop screens */
+@media only screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+
+    }
+
+    figure {
+        justify-content: center;
+    }
+
+    section {
+        justify-content: center;
+    }
+
+    footer {
+        justify-content: center;
+}
+}
+/* Media query tags for tablets, etc */
+@media only screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+
+    }
+
+    figure {
+        justify-content: center;
+    }
+    section {
+        justify-content: center;
+    }
+
+    footer {
+        justify-content: center;
+}
+/* Media query tags for phones and small devices */
+@media only screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+
+    }
+
+    figure {
+        justify-content: center;
+    }
+    section {
+        justify-content: center;
+    }
+
+    footer {
+        justify-content: center;
+}
 }
