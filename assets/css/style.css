@@ -66,40 +66,7 @@ header ul li {
 }
 /* End of banner style */
 
-/* footer start */
-footer {
-    background-color: 
-    #95b0b3;
-    border: 5px solid var(--secondary-color);
-    border-radius: 10px;
-    padding: 20px;
 
-}
- /* start of contact-me style in footer tag */
- #contact-me {
-   
-     display: flex;
-     justify-content:space-evenly;
- }
-
-#contact-me h2 {
-    border: 5px solid var(--secondary-color);
-    border-radius: 10px;
-    padding: 12px;
-    background-image: url('../images/orange.jpg');
-    background-repeat: repeat-x;
-    display: flex;
-}
-#contact-me h4 {
-    border: 5px solid var(--secondary-color);
-    border-radius: 10px;
-    padding: 10px;
-    background-image: url('../images/light-teal.jpg');
-    background-repeat: repeat-x;
-    display: flex;
-}
-/* end of contact-me style */
-/* end of footer style */
 
 
 /* start of sub-banner style */
@@ -159,10 +126,10 @@ footer {
     border: 5px solid var(--secondary-color);
     border-radius: 15px;
     padding: 25px var(--secondary-color);
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around; */
     text-decoration: none;
     
 
@@ -190,8 +157,7 @@ footer {
     border-radius: 15px;
     background-image: url('../images/orange.jpg');
     background-repeat: repeat-x;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 #work ul  {
     color: var(--secondary-color);
@@ -202,22 +168,21 @@ footer {
     color:#3d0207; 
 }
 #work ul li:hover {
-    display: flex;
     opacity: 1;
     
 }
-
+#bigger-photo img{   
+    width: 650px;    
+    height: auto;  
+}
 #work ul li img {
     border: 5px solid var(--secondary-color);
     border-radius: 15px;
-    max-width: 400px;
-    height:auto; 
+    width: 400px;
+    height: auto; 
     
 }
-#work ul li img {
-    background-image: url('../images/portfolio-project.png');
-    background-size: 1000px;
-}
+
 /* #work ul li img.big-photo {
     border: 5px solid blue;
     border-radius: 15px;
@@ -275,7 +240,39 @@ ul li {
     color: #3d0207;
     tex-align: right;
 }
+/* footer start */
+footer {
+    background-color: 
+    #95b0b3;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
 
+}
+ /* start of contact-me style in footer tag */
+ #contact-me {
+     display: flex;
+     justify-content:space-evenly;
+ }
+
+#contact-me h2 {
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 12px;
+    background-image: url('../images/orange.jpg');
+    background-repeat: repeat-x;
+    display: flex;
+}
+#contact-me h4 {
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url('../images/light-teal.jpg');
+    background-repeat: repeat-x;
+    display: flex;
+}
+/* end of contact-me style */
+/* end of footer style */
 /* Media query tags for a responsive layout when resizing the page */
 /* small desktop screens */
 @media only screen and (max-width: 980px) {
