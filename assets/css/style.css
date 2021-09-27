@@ -4,19 +4,21 @@
     --tertiary-color: #39a6b2;
 
   }
+  
+* {
+    /* box-sizing: border-box; */
+    margin: 5px;
+    padding: 0;
+    border-color: #39a6b2;
+  } 
+  
 body {
     margin: 5px;
     padding: 10px;
     background-color: #fdc598; 
     
 }
-* {
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 0;
-    border-color: #39a6b2;
-  } 
-  
+
 /*  */
 
  /* Start of the header style */
@@ -40,10 +42,10 @@ header h1 {
     background-color: var(--secondary-color);
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
-    display: flex;
+    /* display: flex;
     justify-content: start;
     flex-direction: row;
-    text-shadow: 0 0 10px var('--secondary-color');
+    text-shadow: 0 0 10px var('--secondary-color'); */
     
 
 }
@@ -183,24 +185,25 @@ header ul li {
     
 }
 
-/* #work ul li img.big-photo {
-    border: 5px solid blue;
+#work ul li {
+    border: 5px solid var('--secondary-color');
     border-radius: 15px;
-    max-width: 750px;
-    height:auto; 
-} */
+    text-align: left; 
+} 
+
 ul {
     display: grid;
     list-style: none;
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    flex-wrap: wrap;
     
 }
 ul li {
-    display: flex;
+    /* display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
-    overflow: hidden;
-}
+    overflow: auto;
+} */
 
 
 
