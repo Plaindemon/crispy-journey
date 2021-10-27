@@ -18,8 +18,6 @@ body {
     margin: 5px;
     padding: 10px;
     background-color: rgba(214, 119, 10, 0.5);
-    
-    
 }
 
 /*  */
@@ -80,19 +78,33 @@ body {
 
 
 /* start of sub-banner style */
-#sub-banner {
+.sub-banner {
     font-size: 24px;
     background-image: url('../images/light-teal.jpg');
     background-attachment: fixed;
     padding: 15px;
     background-size: cover;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
 }
-#sub-banner h2 {
+/* .sub-banner h2 {
+    
+
+
+} */
+.sub-banner section figure h2 {
     font-weight: bold;
-    color: #3d0207
-
-
+    color: #3d0207;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.sub-banner section figure p {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
 }
 /* end of sub-banner style */ 
 
