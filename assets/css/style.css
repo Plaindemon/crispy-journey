@@ -18,6 +18,12 @@ body {
     margin: 5px;
     padding: 10px;
     background-color: rgba(214, 119, 10, 0.5);
+    background-image: url('/assets/images/red.jpg');
+    position: sticky;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background of red stone added to the complete body background */
 }
 
 /*  */
@@ -308,13 +314,13 @@ footer {
  /* start of contact-me style in footer tag */
 
  #contact-me {
-    
     display: flex;
     justify-content:space-evenly;
  }
 
  .contact-me-head  {
-    border: 1px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 5px;
     padding: 12px;
     display: flex;
