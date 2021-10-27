@@ -274,10 +274,13 @@ body {
     border-radius: 5px;
     padding: 25px;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    /* text-decoration: none; */
+    text-decoration: none;
+    font-size: 18px;
+    color: #3d0207;
+    align-items:stretch;
 }
 
 .resume-head {
@@ -295,11 +298,11 @@ body {
     
 }
 
-.resume ul  {
+/* .resume ul  {
     font-size: 18px;
     color: #3d0207;
     align-items: flex-end;
-}
+} */
 
 #resume ul li p {
     font-size: 18px;
