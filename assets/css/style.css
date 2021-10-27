@@ -1,10 +1,12 @@
 :root {
-    --primary-color: #fc9038;
-    --secondary-color: #76020c;
-    --tertiary-color: #39a6b2;
+    --primary-color: rgba(214, 119, 10, 0.8);
+    --secondary-color: rgba(116, 1, 1, 0.8);
+    --tertiary-color:rgba(63, 132, 179, 0.8);
 
   }
-  
+/* .test { --primary-color: #fc9038;
+    --secondary-color: #76020c;
+    --tertiary-color: #39a6b2; } */
 * {
     /* box-sizing: border-box; */
     margin: 5px;
@@ -15,16 +17,18 @@
 body {
     margin: 5px;
     padding: 10px;
-    background-color: #fdc598; 
+    background-color: rgba(214, 119, 10, 0.5);
+    
     
 }
 
 /*  */
 
  /* Start of the header style */
-header {
+.header {
     border: 5px solid var(--tertiary-color);
     padding: 20px;
+    border-radius: 5px;
     background-color: var(--primary-color);
     background-image: url("../images/orange.jpg");
     display: flex;
@@ -38,37 +42,41 @@ header {
 } 
 
 
-header h1 {
+.header h1 {
     background-color: var(--secondary-color);
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
+    border-radius: 5px;
     /* display: flex;
     justify-content: start;
     flex-direction: row;
     text-shadow: 0 0 10px var('--secondary-color'); */
-    
-
 }
 /* added flexbox to the list */
-header ul li {
+.header ul li {
     background-color: var(--tertiary-color);
     font-weight: bold;
     font-size: 20px;
     font-family: Helvetica, Arial, sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-wrap: wrap; 
+    flex-direction: row-reverse; 
     vertical-align: top;
     justify-content: stretch;
-    border-radius: 5%;
-    
-    
-    
-   
+    border-radius: 10px;
+}
+
+.navbar-style {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-style {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
 }
 /* End of banner style */
-
-
 
 
 /* start of sub-banner style */
@@ -78,6 +86,7 @@ header ul li {
     background-attachment: fixed;
     padding: 15px;
     background-size: cover;
+    border-radius: 10px;
 }
 #sub-banner h2 {
     font-weight: bold;
@@ -91,6 +100,7 @@ header ul li {
 
 #about-me {
     border: 5px solid var(--secondary-color);
+    border-radius: 10px;
 }
 
 #about-me h2 {
@@ -99,12 +109,13 @@ header ul li {
     padding: 20px;
     display: flex;
     justify-content: flex-end;
-    
+    border-radius: 10px;
 }
 
 
 #about-me p {
     border: 5px solid var(--primary-color);
+    border-radius: 10px;
     font-size: 18px;
     padding: 15px;
     display: flex;
@@ -117,6 +128,7 @@ header ul li {
     border: 5px solid var(--secondary-color);
     max-width: 10%;
     height: auto;
+    border-radius: 10px;
 
 }
 
@@ -142,9 +154,6 @@ header ul li {
     background-size: 15px;
     background-repeat: repeat;
     padding: 50px;
-   
-    
-    
 }
 #bigger-photo img{
     border: 5px solid var(--secondary-color);
@@ -217,6 +226,11 @@ ul {
     align-items:flex-end;
     justify-content: flex-end;
     box-shadow: 1px 1px 10px #3d0207;
+    background-image: url('../images/light-teal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+    background-attachment: fixed;
 
 
 }
@@ -276,6 +290,9 @@ footer {
 }
 /* end of contact-me style */
 /* end of footer style */
+
+
+
 /* Media query tags for a responsive layout when resizing the page */
 /* small desktop screens */
 @media only screen and (max-width: 980px) {
